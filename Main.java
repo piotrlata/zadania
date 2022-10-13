@@ -1,8 +1,6 @@
 
 /**
  * rotate image 90 degree
- * make image black and white
- * find index of the last occurrence in a given string
  * text justification to left giving max width of line, split word with "-" in case a word is too long
 */
 public class Main {

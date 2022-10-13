@@ -6,6 +6,9 @@ public class Compare2DArraysImpl<T> implements Compare2DArrays<T> {
         final int HUNDRED = 100;
         int arrayDim2 = array1[0].length;
         int arrayDim1 = array1.length;
+        if (arrayDim1 != array2.length || arrayDim2 != array2[0].length) {
+            throw new IllegalArgumentException("arrays dimensions don't match");
+        }
         double count = 0;
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array1[i].length; j++) {
